@@ -1,0 +1,172 @@
+/* ============================================================
+   1. RESET GLOBAL
+   Zera margens e paddings padrão dos navegadores, e define
+   que o tamanho dos elementos inclui borda e padding.
+   Sem isso, cada navegador renderiza diferente.
+   ============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================================================
+   2. CORPO DA PÁGINA
+   Define a fonte, as cores gerais, e os limites de largura.
+   margin auto nos lados centraliza a página na tela.
+   ============================================================ */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f7fb;
+    color: #2c3a52;
+    min-width: 375px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================================
+   3. TIPOGRAFIA GERAL
+   Regras que se aplicam a textos em todo o site.
+   Títulos h1/h2/h3 ganham espaço acima e abaixo.
+   h2 recebe a cor azul da paleta do site.
+   ============================================================ */
+h1, h2, h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #0d2b5e;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #1a4a8a;
+}
+
+/* ============================================================
+   4. CABEÇALHO (header)
+   Fundo azul escuro, texto centralizado.
+   O id #titulo-destaque estiliza só o título principal.
+   ============================================================ */
+header {
+    background-color: #0d2b5e;
+    text-align: center;
+    padding: 20px;
+}
+
+#titulo-destaque {
+    color: #f0f4ff;
+    font-size: 40px;
+}
+
+/* ============================================================
+   5. MENU DE NAVEGAÇÃO (Flexbox)
+   display: flex → coloca os itens lado a lado
+   justify-content → distribui o espaço entre os links
+   align-items: center → alinha verticalmente ao meio da caixa
+   ============================================================ */
+.menu {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: #0a2150;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #a8bfe0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ============================================================
+   6. SEÇÕES DE CONTEÚDO
+   padding cria espaço interno nas seções.
+   O h2:first-child zera a margem do primeiro título de cada
+   seção para não criar espaço excessivo no topo.
+   ============================================================ */
+section {
+    padding: 20px;
+}
+
+/* ============================================================
+   7. CONTEÚDO DA SEÇÃO 1
+   Estilo do subtítulo e das listas explicativas.
+   main ul/li restringe o estilo só ao conteúdo,
+   sem afetar o menu.
+   ============================================================ */
+main ul, main li {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/* ============================================================
+   8. FIGURAS DA SEÇÃO 1 (Flexbox)
+   display: flex → coloca as figuras lado a lado
+   flex-wrap: wrap → se a tela for pequena, pula para a linha de baixo
+   justify-content → espalha as figuras com espaço entre elas
+   ============================================================ */
+.figuras-teoria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* ============================================================
+   9. GALERIA DE FOTOS (Flexbox)
+   Mesmo princípio das figuras, mas com gap para espaço uniforme
+   entre as fotos.
+   ============================================================ */
+.container-galeria {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* ============================================================
+   10. IMAGENS DA GALERIA
+   width: 100% → ocupa a largura disponível
+   max-width → limita para não ficar gigante em telas grandes
+   height fixa + object-fit: cover → todas do mesmo tamanho,
+   sem distorcer a imagem (recorta se necessário)
+   ============================================================ */
+.container-galeria img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ============================================================
+   11. REFERÊNCIAS
+   Linha tracejada separando as referências do resto da seção.
+   ============================================================ */
+.referencias {
+    padding-top: 20px;
+    border-top: 1px dashed #ccc;
+}
+
+/* ============================================================
+   12. RODAPÉ (footer)
+   Fundo azul escuro igual ao header, texto claro centralizado.
+   Mantém consistência visual entre topo e base da página.
+   ============================================================ */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0d2b5e;
+    color: #a8bfe0;
+}
