@@ -37,6 +37,13 @@ header {
     padding: 20px;
 }
 
+figcaption {
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+    margin-top: 6px;
+}
+
 #titulo-destaque {
     color: #f0f4ff;
     font-size: 40px;
@@ -57,7 +64,7 @@ header {
     text-decoration: none;
     color: #a8bfe0;
     font-weight: bold;
-    font-size: 20px;
+    font-size: clamp(12px, 2vw, 20px);
 }
 
 section {
