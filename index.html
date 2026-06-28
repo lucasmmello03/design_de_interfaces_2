@@ -3,8 +3,43 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="cache-control" content="no-cache, must-revalidate">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Funções Matemáticas</title>
+
+  <meta name="description"
+    content="Site educativo sobre funções matemáticas: linear, quadrática, exponencial e logarítmica.">
+  <meta name="keywords"
+    content="funções matemáticas, função linear, função quadrática, função exponencial, função logarítmica">
+  <meta name="author" content="Lucas Melo De Mello">
+
+  <meta name="revisit-after" content="10 days">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google" content="notranslate">
+
+  <meta property="og:title" content="Funções Matemáticas">
+  <meta property="og:description" content="Site educativo sobre funções matemáticas do ensino médio.">
+  <meta property="og:image" content="https://lucasmmello03.github.io/design_de_interfaces_2/img/logo.webp">
+  <meta property="og:url" content="https://lucasmmello03.github.io/design_de_interfaces_2/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Funções Matemáticas">
+  <meta name="twitter:description" content="Site educativo sobre funções matemáticas do ensino médio.">
+  <meta name="twitter:image" content="https://lucasmmello03.github.io/design_de_interfaces_2/img/logo.webp">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="distribution" content="global">
+  <meta name="geo.region" content="BR-RS">
+  <meta name="geo.placename" content="Rio Grande">
+  <meta name="geo.position" content="-32.035;-52.099">
+
+  <link rel="icon" href="img/logo.webp" type="image/webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +47,21 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="css/modern-normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
   <header id="topo">
-    <img src="img/logo.png" alt="Logo do site" width="300">
+    <img src="img/logo.webp" alt="Logo do site" width="300">
     <h1 id="titulo-destaque">Funções Matemáticas</h1>
 
     <nav>
       <ul class="menu">
         <li><a href="#introducao">Introdução</a></li>
         <li><a href="#galeria">Gráficos</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#formulario">Formulário</a></li>
+        <li><a href="#painel">Painel</a></li>
       </ul>
     </nav>
   </header>
@@ -37,10 +72,8 @@
       <p>Função é uma relação de um conjunto não vazio em outro conjunto também não vazio, em que cada elemento do
         primeiro conjunto relaciona-se com um único elemento do outro.
       </p>
-      <p>É uma aplicação que relaciona os
-        elementos de
-        dois conjuntos não vazios. Considere dois conjuntos não vazios A e B, em que uma função f relaciona cada
-        elemento de A a um único elemento de B.</p>
+      <p>É uma aplicação que relaciona os elementos de dois conjuntos não vazios. Considere dois conjuntos não vazios
+        A e B, em que uma função f relaciona cada elemento de A a um único elemento de B.</p>
 
       <h2>Conceitos Básicos</h2>
       <ul>
@@ -51,39 +84,37 @@
 
       <div class="figuras-teoria">
         <figure>
-          <img src="img/diagrama.png" alt="Diagrama de flechas representando uma função" width="250">
+          <img src="img/diagrama.webp" alt="Diagrama de flechas representando uma função" width="250">
           <figcaption>Exemplo de relação entre conjuntos A e B — Fonte: Brasil Escola</figcaption>
         </figure>
         <figure>
-          <img src="img/grafico-afim.png" alt="Gráfico de uma função do primeiro grau" width="250">
+          <img src="img/grafico-afim.webp" alt="Gráfico de uma função do primeiro grau" width="250">
           <figcaption>Representação de uma função afim no plano cartesiano — Fonte: Brasil Escola</figcaption>
         </figure>
       </div>
 
-      <p>As funções são essenciais para prever comportamentos, como o crescimento de uma população ou a trajetória de um
-        objeto.</p>
+      <p>As funções são essenciais para prever comportamentos, como o crescimento de uma população ou a trajetória
+        de um objeto.</p>
 
       <div class="classificacao">
         <h2>Classificação de funções</h2>
         <ul>
           <li><strong>Função Injetora:</strong> Cada elemento do conjunto A tem um elemento exclusivo no conjunto B.
           </li>
-
           <li><strong>Função Sobrejetora:</strong> O conjunto Imagem é igual ao Contradomínio (não sobra ninguém em B).
           </li>
-
           <li><strong>Função Bijetora:</strong> Quando ela é as duas coisas ao mesmo tempo.</li>
         </ul>
       </div>
 
       <h2>Função do 1º Grau</h2>
-      <p>É definida por f(x) = ax + b. Seu gráfico é sempre uma reta. Quando a &gt; 0 a reta sobe, quando a &lt; 0 a
-        reta desce.</p>
+      <p>É definida por f(x) = ax + b. Seu gráfico é sempre uma reta. Quando a &gt; 0 a reta sobe, quando a &lt; 0
+        a reta desce.</p>
       <p>Exemplo: f(x) = 2x + 3. Para x = 1, o resultado é 5.</p>
 
       <h2>Função do 2º Grau</h2>
-      <p>É definida por f(x) = ax² + bx + c. Seu gráfico é uma parábola. Quando a &gt; 0 a parábola abre para cima,
-        quando a &lt; 0 abre para baixo.</p>
+      <p>É definida por f(x) = ax² + bx + c. Seu gráfico é uma parábola. Quando a &gt; 0 a parábola abre para
+        cima, quando a &lt; 0 abre para baixo.</p>
       <p>Exemplo: f(x) = x² − 4. As raízes são x = 2 e x = −2.</p>
 
       <h2>Função Exponencial</h2>
@@ -104,36 +135,130 @@
 
       <div class="container-galeria">
         <figure>
-          <img src="img/grafico-afim.png" alt="Gráfico Linear">
+          <img src="img/grafico-afim.webp" alt="Gráfico Linear">
           <figcaption>Função Linear — Fonte: Brasil Escola</figcaption>
         </figure>
-
         <figure>
-          <img src="img/quadratica.png" alt="Gráfico de Parábola">
+          <img src="img/quadratica.webp" alt="Gráfico de Parábola">
           <figcaption>Função Quadrática — Fonte: Brasil Escola</figcaption>
         </figure>
-
         <figure>
-          <img src="img/exponencial.png" alt="Gráfico Exponencial">
+          <img src="img/exponencial.webp" alt="Gráfico Exponencial">
           <figcaption>Função Exponencial — Fonte: Brasil Escola</figcaption>
         </figure>
-
         <figure>
-          <img src="img/logaritmica.png" alt="Gráfico Logarítmico">
+          <img src="img/logaritmica.webp" alt="Gráfico Logarítmico">
           <figcaption>Função Logarítmica — Fonte: Brasil Escola</figcaption>
+        </figure>
+      </div>
+
+      <a href="#topo">Voltar ao topo</a>
+    </section>
+
+    <section id="formulario">
+      <h2>Sugestão de Conteúdo</h2>
+      <p>Sugira um assunto matemático que gostaria de ver no site</p>
+
+      <div class="container-formulario">
+        <div class="formulario-figura">
+          <img src="img/math.webp" alt="Fórmulas matemáticas em uma lousa">
+        </div>
+
+        <form method="post" action="#">
+          <fieldset>
+            <legend>Seus dados</legend>
+
+            <label for="n1">Nome:</label>
+            <input type="text" name="nome" id="n1">
+
+            <label for="e1">E-mail:</label>
+            <input type="email" name="email" id="e1">
+
+            <label for="d1">Data do envio:</label>
+            <input type="date" name="data" id="d1">
+          </fieldset>
+
+          <fieldset>
+            <legend>Sua sugestão</legend>
+
+            <label for="s1">Tema sugerido:</label>
+            <input type="text" name="tema" id="s1">
+
+            <label for="nv1">Nível de dificuldade:</label>
+            <select name="dificuldade" id="nv1">
+              <option value="">Selecione...</option>
+              <option value="basico">Básico</option>
+              <option value="intermediario">Intermediário</option>
+              <option value="avancado">Avançado</option>
+            </select>
+
+            <label for="m1">Mensagem:</label>
+            <textarea name="mensagem" id="m1" rows="4"></textarea>
+          </fieldset>
+
+          <button type="submit">Enviar sugestão</button>
+        </form>
+      </div>
+
+      <a href="#topo">Voltar ao topo</a>
+    </section>
+
+    <section id="painel">
+      <h2>Funções no Mundo Real</h2>
+      <p>Veja como as funções matemáticas aparecem em situações do cotidiano:</p>
+
+      <div class="container-painel">
+        <figure class="painel-item painel-grande">
+          <img src="img/arco.webp" alt="Ponte em Arco — função quadrática">
+          <figcaption>Ponte Arco — Função Quadrática</figcaption>
+        </figure>
+        <figure class="painel-item">
+          <img src="img/juros_exponencial.webp" alt="Crescimento Exponencial — função exponencial">
+          <figcaption>Gráfico Exponencial — Função Exponencial</figcaption>
+        </figure>
+        <figure class="painel-item">
+          <img src="img/montanha_linear.webp" alt="Montanha — função linear">
+          <figcaption>Montanha — Função Linear</figcaption>
+        </figure>
+        <figure class="painel-item">
+          <img src="img/nautilus.webp" alt="Concha Nautilus — função logaritmica">
+          <figcaption>Concha Nautilus — Função Logarítmica</figcaption>
+        </figure>
+        <figure class="painel-item">
+          <img src="img/radio_onda.webp" alt="Ondas de Rádio — função seno">
+          <figcaption>Ondas de Rádio — Função Seno</figcaption>
         </figure>
       </div>
 
       <div class="referencias">
         <p><strong>Referências:</strong></p>
-        <p>BRASIL ESCOLA. Funções. Disponível em: <a
-            href="https://brasilescola.uol.com.br/matematica/funcoes.htm">brasilescola.uol.com.br</a></p>
+        <p>BRASIL ESCOLA. Funções. Disponível em:
+          <a href="https://brasilescola.uol.com.br/matematica/funcoes.htm">brasilescola.uol.com.br</a>
+        </p>
+        <p>UNSPLASH. Ponte em Arco. Foto de <a href="https://unsplash.com/pt-br/@delajed">Dela Jed</a>. Disponível
+          em: <a href="https://unsplash.com">unsplash.com</a></p>
+        <p>UNSPLASH. Crescimento Exponencial. Foto de
+          <a href="https://unsplash.com/pt-br/@kobuagency">Kobu Agency</a>. Disponível em:
+          <a href="https://unsplash.com">unsplash.com</a>
+        </p>
+        <p>UNSPLASH. Montanha. Foto de <a href="https://unsplash.com/pt-br/@illes_cristi">Illes Cristi</a>.
+          Disponível em: <a href="https://unsplash.com">unsplash.com</a></p>
+        <p>UNSPLASH. Concha Nautilus. Foto de
+          <a href="https://unsplash.com/pt-br/@contentpixie">Content Pixie</a>. Disponível em:
+          <a href="https://unsplash.com">unsplash.com</a>
+        </p>
+        <p>UNSPLASH. Ondas de Rádio. Foto de <a href="https://unsplash.com/pt-br/@jumpingjax">Jumping Jax</a>.
+          Disponível em: <a href="https://unsplash.com">unsplash.com</a></p>
+        <p>UNSPLASH. Lousa Matemática. Foto de
+          <a href="https://unsplash.com/pt-br/@silverkblack">Silverk Black</a>. Disponível em:
+          <a href="https://unsplash.com">unsplash.com</a>
+        </p>
       </div>
 
       <a href="#topo">Voltar ao topo</a>
     </section>
-  </main>
 
+  </main>
 
   <footer>
     <p>Página desenvolvida por: Lucas Melo De Mello</p>
